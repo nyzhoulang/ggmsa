@@ -1,3 +1,10 @@
+# ggmsa 1.0.1
+
++ bugfix: fix variable names error in color_scheme. (2021-07-29, Thu)
++ The migration of sequence recombination functionality from `seqcombo` package. (2021-07-20, Tue)
+
+
+# ggmsa 1.0.0
 
 + added `gghelix()` and `geom_helix()`.(2021-04-1, Thu)
 + added option to show the fill legend.(2021-03-23, Tue)

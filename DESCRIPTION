@@ -19,10 +19,10 @@ Imports:
 	  RColorBrewer,
 	  ggalt,
 	  ggforce,
-	  R4RNA,
 	  methods,
-	  dplyr,
+	  dplyr
 Suggests:
+    R4RNA,
     ape,
     cowplot,
     ggtree (>= 1.17.1),
