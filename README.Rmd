@@ -21,10 +21,10 @@ library(badger)
 
 ```{r, echo = FALSE, results='asis'}
 cat(
-	badge_cran_release("badger", "blue"),
+	badge_cran_release("ggmsa", "blue"),
 	badge_devel("YuLab-SMU/ggmsa", "blue"),
-	badge_cran_download("badger", "grand-total", "green"),
-	badge_cran_download("badger", "last-month", "green"),
+	badge_cran_download("ggmsa", "grand-total", "green"),
+	badge_cran_download("ggmsa", "last-month", "green"),
 	badge_cran_checks("ggmsa"),
 	badge_lifecycle("experimental", "orange"),
 	badge_license("Artistic-2.0")
@@ -74,12 +74,9 @@ Check out the guides for learning everything there is to know about all the diff
 
 ##  :runner: Author
 
-- [GuangChuang Yu](https://guangchuangyu.github.io)  Professor, PI 
-
-- [Shuangbin Xu](https://github.com/xiangpin)  PhD Student
-
+- [Guangchuang Yu](https://guangchuangyu.github.io)  Professor, PI 
 - [Lang Zhou](https://github.com/nyzhoulang)  Master's Student
-
+- [Shuangbin Xu](https://github.com/xiangpin)  PhD Student
 
 **YuLab**  <https://yulab-smu.top/>
 

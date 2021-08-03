@@ -1,3 +1,7 @@
+# ggmsa 1.0.2
+
++ import R4RNA to fix R check (2021-08-03, Tue)
+
 # ggmsa 1.0.1
 
 + bugfix: fix variable names error in color_scheme. (2021-07-29, Thu)

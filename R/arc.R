@@ -42,6 +42,12 @@ geom_helix <- function(helix_data, color_by = "length", overlap = FALSE,  ...) {
 ##' @param file A text file in connect format
 ##' @param type file type. one of "Helix, "Connect", "Vienna" and "Bpseq"
 ##' @return data frame
+##' @importFrom R4RNA readHelix
+##' @importFrom R4RNA readConnect
+##' @importFrom R4RNA readVienna
+##' @importFrom R4RNA readBpseq
+##' @importFrom R4RNA expandHelix
+##' @importFrom R4RNA collapseHelix
 ##' @export
 ##' @author Lang Zhou
 readSSfile <- function(file, type = NULL) {
