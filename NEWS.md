@@ -1,3 +1,7 @@
+# ggmsa 1.0.3
+
++ update default color schemes in  lower part of the SeqDiff plot (2021-08-20, Fri)
+
 # ggmsa 1.0.2
 
 + import R4RNA to fix R check (2021-08-03, Tue)
