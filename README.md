@@ -1,14 +1,8 @@
-
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# ggmsa: Plot multiple sequence alignment using ggplot2 <img src="man/figures/logo.png" height="140" align="right" />
+# ggmsa:a visual exploration tool for multiple sequence alignment and associated data <img src="man/figures/logo.png" height="140" align="right" />
 
-[![](https://www.r-pkg.org/badges/version/ggmsa?color=blue)](https://cran.r-project.org/package=ggmsa)
-[![](https://img.shields.io/badge/devel%20version-1.0.2-blue.svg)](https://github.com/YuLab-SMU/ggmsa)
-[![](http://cranlogs.r-pkg.org/badges/grand-total/ggmsa?color=green)](https://cran.r-project.org/package=ggmsa)
-[![](http://cranlogs.r-pkg.org/badges/last-month/ggmsa?color=green)](https://cran.r-project.org/package=ggmsa)
-[![CRAN
-checks](https://cranchecks.info/badges/summary/ggmsa)](https://cran.r-project.org/web/checks/check_results_ggmsa.html)
+[![](https://img.shields.io/badge/devel%20version-1.0.3-blue.svg)](https://github.com/YuLab-SMU/ggmsa)
 [![](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![License:
 Artistic-2.0](https://img.shields.io/badge/license-Artistic--2.0-blue.svg)](https://cran.r-project.org/web/licenses/Artistic-2.0)
@@ -26,7 +20,9 @@ For details, please visit <http://yulab-smu.top/ggmsa/>
 
 ## :hammer: Installation
 
-You can install `ggmsa` from CRAN using `install.packages('ggmsa')`.
+\~\~You can install `ggmsa` from CRAN using `install.packages('ggmsa')`.
+\~\~
+
 Alternatively you can grab the development version from github using
 devtools:
 
