@@ -13,7 +13,7 @@
   xlab = "Nucleotide Position",
   by = "bar",
   fill = "firebrick",
-  colors = c(A = "#E495A5", C = "#ABB065", G = "#39BEB1", T = "#ACA4E2"),
+  colors = c(A = "#ff6d6d", C = "#769dcc", G = "#f2be3c", T = "#74ce98"),
   xlim = NULL
 )
 }
