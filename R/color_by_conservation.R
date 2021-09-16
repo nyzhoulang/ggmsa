@@ -1,5 +1,5 @@
 color_increment <- function(conservation_visibility){
-    lapply(1:nrow(conservation_visibility), function(i){
+    lapply(seq_len(nrow(conservation_visibility)), function(i){
         color_ramp <- colorRampPalette(colors = c(conservation_visibility[i,"color"], "#ffffff"))
         color_change <- rev(color_ramp(100))[conservation_visibility[i,"visibility"]]
         return(color_change)

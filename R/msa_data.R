@@ -97,7 +97,7 @@ msa_data <- function(tidymsa, font = "helvetical",
         char_width <- char_width * diff(range(y$new_position))/diff(range(y$position))
     }
 
-    yy <- lapply(1:nrow(y), function(i) {
+    yy <- lapply(seq_len(nrow(y)), function(i) {
         d <- y[i, ]
         dd <- data_sp[[d$character]]
         if(d$character == "."){ # '.' without zooming

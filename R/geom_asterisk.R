@@ -61,7 +61,7 @@ Geomasterisk <- ggproto("Geomasterisk", Geom,
 
                          draw_panel = function(data, panel_params, coord) {
                              data <- coord$transform(data, panel_params)
-                             grobs <- lapply(1:nrow(data), function(i) {
+                             grobs <- lapply(seq_len(nrow(data)), function(i) {
                                           SeedStar(data$x[i], data$y[i])
                                       })
                              class(grobs) <- "gList"

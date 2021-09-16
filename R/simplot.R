@@ -78,7 +78,7 @@ simplot <- function(file, query, window=200, step=20, group=FALSE, id, sep, sd=F
 
 
 toCharacter <- function(x) {
-	unlist(strsplit(toString(x),""))
+    unlist(strsplit(toString(x),""))
 }
 
 

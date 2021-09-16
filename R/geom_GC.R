@@ -4,7 +4,6 @@
 ##' @param show.legend logical. Should this layer be included in the legends?
 ##' @return a ggplot layer
 ##' @examples
-##' library(ggplot2)
 ##' #plot GC content
 ##' f <- system.file("extdata/LeaderRepeat_All.fa", package="ggmsa")
 ##' ggmsa(f, font = NULL, color="Chemistry_NT") + geom_GC()
@@ -40,8 +39,9 @@ content_GC<- function(data){
     tidy <- data
     tidy$name <- factor(tidy$name, levels = unique(tidy$name))
     tidy$ypos <- as.numeric(tidy$name)
-    seq_num <- levels(factor(tidy$ypos)) # the sequence number
-    lchar_num <- lapply(1:length(seq_num),function(j){
+    #seq_num <- levels(factor(tidy$ypos)) # the sequence number
+    seq_num <- unique(tidy$ypos)
+    lchar_num <- lapply(seq_num, function(j){
         clo <- tidy[tidy$ypos == j, ]
         y <- prop.table(table(clo$character))
         y["GC"] <- y["G"] + y["C"]
@@ -52,7 +52,7 @@ content_GC<- function(data){
 
     char_num <- do.call(rbind,lchar_num)
     char_num <- as.data.frame(char_num)
-    char_num["ypos"] =  as.numeric(seq_num)
+    char_num["ypos"] =  seq_num
     char_num2 <- gather(char_num,character,fre, "A", "T", "C","G","GC")
     return(char_num2)
 }

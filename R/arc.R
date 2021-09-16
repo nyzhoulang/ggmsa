@@ -1,9 +1,13 @@
 ##'  Plots nucleltide secondary structure as helices in arc diagram
 ##'
 ##' @title gghelix
-##' @param helix_data a data frame. The file of nucleltide secondary structure and then read by ggmsa::readSSfile.
-##' @param overlap Logicals. If TRUE, two structures data called predict and known must be given(eg:heilx_data = list(known = data1, predicted = data2)), plots the predicted helices that are known on top, predicted helices that are not known on the bottom, and finally plots unpredicted helices on top in black.
-##' @param color_by generate colors for helices by various rules, including integer counts and value ranges one of "length" and "value"
+##' @param helix_data a data frame. The file of nucleltide secondary structure
+##' and then read by ggmsa::readSSfile.
+##' @param overlap Logicals. If TRUE, two structures data called predict and known must be given
+##' (eg:heilx_data = list(known = data1, predicted = data2)), plots the predicted helices that are known on top,
+##' predicted helices that are not known on the bottom, and finally plots unpredicted helices on top in black.
+##' @param color_by generate colors for helices by various rules,
+##' including integer counts and value ranges one of "length" and "value"
 ##' @return ggplot object
 ##' @export
 ##' @examples
@@ -25,9 +29,13 @@ gghelix <- function(helix_data, color_by = "length",overlap = FALSE){
 ##' The layer of helix plot
 ##'
 ##' @title geom_helix
-##' @param helix_data a data frame. The file of nucleltide secondary structure and then read by ggmsa::readSSfile.
-##' @param overlap Logicals. If TRUE, two structures data called predict and known must be given(eg:heilx_data = list(known = data1, predicted = data2)), plots the predicted helices that are known on top, predicted helices that are not known on the bottom, and finally plots unpredicted helices on top in black.
-##' @param color_by generate colors for helices by various rules, including integer counts and value ranges one of "length" and "value"
+##' @param helix_data a data frame. The file of nucleltide secondary structure
+##' and then read by ggmsa::readSSfile.
+##' @param overlap Logicals. If TRUE, two structures data called predict and known must be given
+##' (eg:heilx_data = list(known = data1, predicted = data2)), plots the predicted helices that are known on top,
+##' predicted helices that are not known on the bottom, and finally plots unpredicted helices on top in black.
+##' @param color_by generate colors for helices by various rules,
+##' including integer counts and value ranges one of "length" and "value"
 ##' @param ... additional parameter
 ##' @return ggplot2 layers
 ##' @export

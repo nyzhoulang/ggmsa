@@ -16,7 +16,6 @@ a ggplot layer
 Multiple sequence alignment layer for ggplot2. It plot points of GC content.
 }
 \examples{
-library(ggplot2)
 #plot GC content
 f <- system.file("extdata/LeaderRepeat_All.fa", package="ggmsa")
 ggmsa(f, font = NULL, color="Chemistry_NT") + geom_GC()
