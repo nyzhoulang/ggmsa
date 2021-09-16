@@ -96,7 +96,7 @@ protein_sequences <- system.file("extdata", "sample.fasta", package = "ggmsa")
 my_pal <- colorRampPalette(rev(brewer.pal(n = 9, name = "Reds")))
 my_cutstom <- data.frame(names = c(LETTERS[1:26],"-"), 
                          color = my_pal(27), 
-                         stringsAsFactors = F)
+                         stringsAsFactors = FALSE)
 head(my_cutstom)
 pals::pal.bands(my_cutstom$color)
 ```

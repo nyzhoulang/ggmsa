@@ -35,7 +35,8 @@ gghelix <- function(helix_data, color_by = "length",overlap = FALSE){
 ##' RF03120 <- system.file("extdata/Rfam/RF03120_SS.txt", package="ggmsa")
 ##'RF03120_fas <- system.file("extdata/Rfam/RF03120.fasta", package="ggmsa")
 ##'SS <- readSSfile(RF03120, type = "Vienna")
-##'ggmsa(RF03120_fas, font = NULL,border = NA, color = "Chemistry_NT", seq_name = F) + geom_helix(SS)
+##'ggmsa(RF03120_fas, font = NULL,border = NA, color = "Chemistry_NT", seq_name = FALSE) +
+##'geom_helix(SS)
 ##' @author Lang Zhou
 geom_helix <- function(helix_data, color_by = "length", overlap = FALSE,  ...) {
   structure(list(helix_data = helix_data,

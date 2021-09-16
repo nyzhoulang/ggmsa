@@ -26,7 +26,7 @@ geom_GC1 <- function(tidyData, show.legend = FALSE){
     col_num <- levels(factor(tidy$position))
     col_len <- length(col_num) + GC_pos
     ly_GC <- geom_point(data = GC, mapping = aes_(x = ~col_len, y = ~ypos, size = ~fre),
-                        color = "#51a6e9", na.rm = T, show.legend = show.legend)
+                        color = "#51a6e9", na.rm = TRUE, show.legend = show.legend)
     return(ly_GC)
 }
 ##' get GC content

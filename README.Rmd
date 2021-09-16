@@ -55,7 +55,7 @@ devtools::install_github("YuLab-SMU/ggmsa")
 ```{r fig.height = 2.5, fig.width = 11, message=FALSE, warning=FALSE, dpi=300}
 library(ggmsa)
 protein_sequences <- system.file("extdata", "sample.fasta", package = "ggmsa")
-ggmsa(protein_sequences, start = 221, end = 280, char_width = 0.5, seq_name = T) + geom_seqlogo() + geom_msaBar()
+ggmsa(protein_sequences, start = 221, end = 280, char_width = 0.5, seq_name = TRUE) + geom_seqlogo() + geom_msaBar()
 ```
 
 

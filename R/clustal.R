@@ -14,12 +14,12 @@ color_Clustal <- function(y) {
             i <- grep(char, scheme_clustal$re_position)
             for (j in i) {
                 if (scheme_clustal$type[j] == "combined"){
-                    rr <- sum(r[strsplit(scheme_clustal$re_gp[j], '')[[1]]], na.rm = T)
+                    rr <- sum(r[strsplit(scheme_clustal$re_gp[j], '')[[1]]], na.rm = TRUE)
                     if (rr > scheme_clustal$thred[j]) {
                         clustal[pos] <- scheme_clustal$colour[j]}
                     } else{
                         rr1<-r[strsplit(scheme_clustal$re_gp[j], ',')[[1]]]
-                        if (any(rr1> scheme_clustal$thred[j],na.rm = T) ) {
+                        if (any(rr1> scheme_clustal$thred[j],na.rm = TRUE) ) {
                             clustal[pos] <- scheme_clustal$colour[j]}
                     }
                 break

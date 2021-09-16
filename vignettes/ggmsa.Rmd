@@ -68,7 +68,7 @@ We’ll start by importing some example data to use throughout this tutorial. Ex
 
 The most simple code to use ggmsa:
 ```{r fig.height = 2, fig.width = 10, warning=FALSE}
-ggmsa(protein_sequences, 300, 350, color = "Clustal", font = "DroidSansMono", char_width = 0.5, seq_name = T )
+ggmsa(protein_sequences, 300, 350, color = "Clustal", font = "DroidSansMono", char_width = 0.5, seq_name = TRUE )
 ```
 
 ##  Color Schemes
@@ -115,11 +115,11 @@ geom_helix()\tannotation module\tdepicts RNA secondary structure as arc diagrams
 
 xx <- strsplit(x, "\n\n")[[1]]
 y <- strsplit(xx, "\t") %>% do.call("rbind", .)
-y <- as.data.frame(y, stringsAsFactors = F)
+y <- as.data.frame(y, stringsAsFactors = FALSE)
 
 colnames(y) <- c("Annotation modules", "Type", "Description")
 
-knitr::kable(y, align = "l", booktabs = T, escape = T) %>% 
+knitr::kable(y, align = "l", booktabs = TRUE, escape = TRUE) %>% 
     kable_styling(latex_options = c("striped", "hold_position", "scale_down"))
   
 ```

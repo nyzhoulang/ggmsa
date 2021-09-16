@@ -18,7 +18,7 @@ geom_msaBar <- function() {
 ly_bar <- function(tidy){
     data <- bar_data(tidy)
     mapping <- aes_(x = ~pos, y = ~Freq, fill = ~Freq)
-    ly_bar <- geom_col(data = data, mapping = mapping, width = 1, show.legend = F)
+    ly_bar <- geom_col(data = data, mapping = mapping, width = 1, show.legend = FALSE)
     return(ly_bar)
 }
 

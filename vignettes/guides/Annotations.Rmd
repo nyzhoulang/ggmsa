@@ -40,12 +40,12 @@ geom_helix()\tannotation module\tdepicts RNA secondary structure as arc diagrams
 require(dplyr)
 xx <- strsplit(x, "\n\n")[[1]]
 y <- strsplit(xx, "\t") %>% do.call("rbind", .)
-y <- as.data.frame(y, stringsAsFactors = F)
+y <- as.data.frame(y, stringsAsFactors = FALSE)
 
 colnames(y) <- c("Annotation modules", "Type", "Description")
 
 require(kableExtra)
-knitr::kable(y, align = "l", booktabs = T, escape = T) %>% 
+knitr::kable(y, align = "l", booktabs = TRUE, escape = TRUE) %>% 
     kable_styling(latex_options = c("striped", "hold_position", "scale_down"))
   
 ```
@@ -56,7 +56,7 @@ knitr::kable(y, align = "l", booktabs = T, escape = T) %>%
 Protein sequence logos annotation for MSA. Sequence logos play a major role in visualizing DNA, RNA and protein binding sites. In the following example, `geom_seqlogo()` module is used to display sequence logos between 300 and 350 sites.  The `+` can be used to link main function `ggmsa()` and `geom_seqlogo()` module.
 
 ```{r  fig.height = 3, fig.width = 11, warning = FALSE}
-ggmsa(protein_sequences, 300, 350, char_width = 0.5, seq_name = T) + 
+ggmsa(protein_sequences, 300, 350, char_width = 0.5, seq_name = TRUE) + 
     geom_seqlogo(color = "Chemistry_AA")
 ```
 
@@ -81,7 +81,7 @@ ggmsa(miRNA_sequences, char_width = 0.5, color = "Chemistry_NT") +
 
 
 ```{r seed2, fig.height = 3, fig.width = 8, warning = FALSE}
-ggmsa(miRNA_sequences, char_width = 0.5, seq_name = T, none_bg = TRUE) + 
+ggmsa(miRNA_sequences, char_width = 0.5, seq_name = TRUE, none_bg = TRUE) + 
     geom_seed(seed = "GAGGUAG")
 ```
 
@@ -90,7 +90,7 @@ ggmsa(miRNA_sequences, char_width = 0.5, seq_name = T, none_bg = TRUE) +
 `geom_msaBar` shows the highest frequency of amino acid residues at each position by a bar chart.
 
 ```{r  fig.height = 2.5, fig.width = 11, warning = FALSE, message=FALSE}
-ggmsa(protein_sequences, 300, 350, char_width = 0.5, seq_name = T) + geom_msaBar()
+ggmsa(protein_sequences, 300, 350, char_width = 0.5, seq_name = TRUE) + geom_msaBar()
 ```
 
 ##  geom_helix
@@ -102,7 +102,7 @@ known_file <- system.file("extdata", "vienna.txt", package = "R4RNA")
 known <- readSSfile(known_file, type = "Vienna" )
 cripavirus_msa <- system.file("extdata", "Cripavirus.fasta", package = "ggmsa")
 
-ggmsa(cripavirus_msa, font = NULL, color = "Chemistry_NT", seq_name = F, show.legend = T, border = "white") +
+ggmsa(cripavirus_msa, font = NULL, color = "Chemistry_NT", seq_name = FALSE, show.legend = TRUE, border = "white") +
   geom_helix(helix_data = known)
 ```
 
