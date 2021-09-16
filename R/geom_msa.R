@@ -26,6 +26,11 @@
 ##' @importFrom ggplot2 scale_fill_manual
 ##' @importFrom utils modifyList
 ##' @export
+##' @examples
+##' library(ggplot2)
+##'aln <- system.file("extdata", "sample.fasta", package = "ggmsa")
+##'tidy_aln <- tidy_msa(aln, start = 150, end = 170)
+##'ggplot() + geom_msa(data = tidy_aln, font = NULL) + coord_fixed()
 ##' @author Guangchuang Yu, Lang Zhou
 geom_msa <- function(data, font = "helvetical",
                      mapping = NULL,

@@ -6,7 +6,7 @@ Authors@R: c(person("Lang", "Zhou",      email = "nyzhoulang@gmail.com",    role
              person("Shuangbin", "Xu",   email = "xshuangbin@163.com",      role = "ctb"),
              person("Huina", "Huang",    email = "1185796994@qq.com",       role = "ctb"))
 Description: Supports visualizing multiple sequence alignment of DNA and protein sequences using 'ggplot2'. It supports a number of colour schemes, including Chemistry, Clustal, Shapely, Taylor and Zappo. Multiple sequence alignment can easily be combined with other 'ggplot2' plots, such as aligning a phylogenetic tree produced by 'ggtree' with multiple sequence alignment.
-Depends: R (>= 3.5.0)
+Depends: R (>= 4.1.0)
 Imports:
     Biostrings,
     ggplot2,
@@ -21,7 +21,9 @@ Imports:
 	  ggforce,
 	  methods,
 	  dplyr,
-	  R4RNA
+	  R4RNA,
+	  grDevices,
+	  grid
 Suggests:
     ggtreeExtra,
     ggtree (>= 1.17.1),
@@ -37,6 +39,6 @@ Suggests:
     gggenes
 License: Artistic-2.0
 Encoding: UTF-8
-biocViews: Software, Visualization, MultipleSequenceAlignment, Annotation, SequenceRecombination
+biocViews: Software, Visualization, Alignment, Annotation
 RoxygenNote: 7.1.1
 VignetteBuilder: knitr

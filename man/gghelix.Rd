@@ -19,6 +19,11 @@ ggplot object
 \description{
 Plots nucleltide secondary structure as helices in arc diagram
 }
+\examples{
+RF03120 <- system.file("extdata/Rfam/RF03120_SS.txt", package="ggmsa")
+helix_data <- readSSfile(RF03120, type = "Vienna")
+gghelix(helix_data)
+}
 \author{
 Lang Zhou
 }

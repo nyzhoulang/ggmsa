@@ -19,6 +19,10 @@ tibble data frame
 \description{
 Convert msa file/object to tidy data frame.
 }
+\examples{
+fasta <- system.file("extdata", "sample.fasta", package = "ggmsa")
+aln <- tidy_msa(msa = fasta, start = 10, end = 100)
+}
 \author{
 Guangchuang Yu
 }

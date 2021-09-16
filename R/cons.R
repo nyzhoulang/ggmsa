@@ -1,10 +1,11 @@
-##' cleaning the needless sequeces' color according to the consensus sequcence (only used in the consensus views).
+##' cleaning the needless sequences' color according to the consensus sequence (only used in the consensus views).
 ##'
 ##' @param y a data frame, sequence alignment with specified color.
 ##' @param consensus the consensus sequence which can be called by get_consensus().
-##' @param disagreement a logical value. Displays characters that disagreememt to consensus(excludes ambiguous disagreements).
+##' @param disagreement a logical value. Displays characters that disagreement to consensus(excludes ambiguous disagreements).
 ##' @param ref a character string. Specifying the reference sequence which should be one of input sequences when 'consensus_views' is TRUE.
 ##' @keywords tidy_color
+##' @noRd
 tidy_color <- function(y, consensus, disagreement, ref) {
     c <- lapply(unique(y$position), function(i) {
         msa_cloumn <- y[y$position == i, ]
@@ -33,6 +34,7 @@ tidy_color <- function(y, consensus, disagreement, ref) {
 ##' @param ignore_gaps a logical value. When selected TRUE, gaps in column are treated as if that row didn't exist.
 ##' @param ref a character string. Specifying the reference sequence which should be one of input sequences when 'consensus_views' is TRUE.
 ##' @keywords get_consensus
+##' @noRd
 get_consensus <- function(tidy, ignore_gaps = FALSE, ref = NULL) {
     if(!is.null(ref)) {
         if(ignore_gaps) {

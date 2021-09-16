@@ -9,6 +9,9 @@ geom_GC(show.legend = FALSE)
 \arguments{
 \item{show.legend}{logical. Should this layer be included in the legends?}
 }
+\value{
+a ggplot layer
+}
 \description{
 Multiple sequence alignment layer for ggplot2. It plot points of GC content.
 }

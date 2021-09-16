@@ -17,6 +17,10 @@ data frame
 \description{
 Read secondary structure file
 }
+\examples{
+RF03120 <- system.file("extdata/Rfam/RF03120_SS.txt", package="ggmsa")
+helix_data <- readSSfile(RF03120, type = "Vienna")
+}
 \author{
 Lang Zhou
 }

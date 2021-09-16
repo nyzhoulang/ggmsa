@@ -73,6 +73,12 @@ A list
 \description{
 Multiple sequence alignment layer for ggplot2. It creats background tiles with/without sequence characters.
 }
+\examples{
+library(ggplot2)
+aln <- system.file("extdata", "sample.fasta", package = "ggmsa")
+tidy_aln <- tidy_msa(aln, start = 150, end = 170)
+ggplot() + geom_msa(data = tidy_aln, font = NULL) + coord_fixed()
+}
 \author{
 Guangchuang Yu, Lang Zhou
 seq_name' work

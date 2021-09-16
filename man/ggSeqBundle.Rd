@@ -42,6 +42,10 @@ ggplot object
 \description{
 plot Sequence Bundles for MSA based 'ggolot2'
 }
+\examples{
+aln <- system.file("extdata", "Gram-negative_AKL.fasta", package = "ggmsa")
+ggSeqBundle(aln)
+}
 \author{
 Lang Zhou
 }

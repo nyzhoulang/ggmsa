@@ -14,6 +14,9 @@
 ##' @param lev_molecule Reassigning the Y-axis and displaying letter-coded amino acids/nucleotides arranged by physiochemical properties or others.eg:amino acids hydrophobicity lev_molecule = c("-","A", "V", "L", "I", "P", "F", "W", "M", "G", "S","T", "C", "Y", "N", "Q", "D", "E", "K","R", "H").
 ##' @return ggplot object
 ##' @export
+##' @examples
+##' aln <- system.file("extdata", "Gram-negative_AKL.fasta", package = "ggmsa")
+##' ggSeqBundle(aln)
 ##' @author Lang Zhou
 ggSeqBundle <- function(msa,
                         line_widch = 0.3,

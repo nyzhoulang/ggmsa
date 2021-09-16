@@ -21,6 +21,12 @@ ggplot2 layers
 \description{
 The layer of helix plot
 }
+\examples{
+RF03120 <- system.file("extdata/Rfam/RF03120_SS.txt", package="ggmsa")
+RF03120_fas <- system.file("extdata/Rfam/RF03120.fasta", package="ggmsa")
+SS <- readSSfile(RF03120, type = "Vienna")
+ggmsa(RF03120_fas, font = NULL,border = NA, color = "Chemistry_NT", seq_name = F) + geom_helix(SS)
+}
 \author{
 Lang Zhou
 }

@@ -2,6 +2,7 @@
 
 ##' @title segment MSA
 ##' @param field a numeric vector of the field size.
+##' @return ggplot layers
 ##' @examples
 ##' library(ggplot2)
 ##' f <- system.file("extdata/sample.fasta", package="ggmsa")

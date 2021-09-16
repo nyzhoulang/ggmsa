@@ -2,6 +2,7 @@
 
 ##' @title geom_GC
 ##' @param show.legend logical. Should this layer be included in the legends?
+##' @return a ggplot layer
 ##' @examples
 ##' library(ggplot2)
 ##' #plot GC content
